@@ -26,6 +26,7 @@ LifeGrid is a private, **local-only** habit & goal tracker for iOS, built with S
 - **Today** — a paged week strip, daily check-offs with streaks, one-time milestones, and an active 90-day plan card. View any past/future day.
 - **Flexible scheduling** — habits can repeat every day or on specific weekdays (e.g. Mon/Wed/Fri); streaks and stats are schedule-aware.
 - **Contribution heatmap** — a GitHub-style grid of your habit completions, with month/weekday labels and tap-to-inspect.
+- **Home Screen widgets** — small and medium WidgetKit widgets showing today's progress ring and a mini heatmap, kept in sync through an App Group.
 - **Statistics** — completion rate, best streak, total check-ins, an 8-week trend, and unlockable achievements.
 - **Journal** — a quick daily mood + reflection log.
 - **Reminders** — optional on-device daily notifications per habit, plus a global nudge, with a **"Mark done"** action right from the notification. No server involved.
@@ -43,6 +44,7 @@ LifeGrid is a private, **local-only** habit & goal tracker for iOS, built with S
 - **Local persistence**: a single Codable `AppSnapshot` saved as JSON in the app's Documents directory
 - **Localization**: `Localizable.xcstrings` String Catalog (EN/IT)
 - **Notifications**: `UserNotifications` (`UNCalendarNotificationTrigger`)
+- **Widgets**: WidgetKit, sharing data through an App Group (`group.com.codex.LifeGrid`)
 - **Project generation**: [XcodeGen](https://github.com/yonsdesign/XcodeGen) (`project.yml`)
 
 ## Getting started
@@ -64,7 +66,7 @@ xcodegen generate
 open LifeGrid.xcodeproj
 ```
 
-In Xcode, select the **LifeGrid** scheme and run on an iOS Simulator. To run on a physical device, set your Apple Developer **Team** under *Signing & Capabilities* (the committed `project.yml` leaves it blank on purpose).
+In Xcode, select the **LifeGrid** scheme and run on an iOS Simulator. To run on a physical device, set your Apple Developer **Team** under *Signing & Capabilities* (the committed `project.yml` leaves it blank on purpose). The app and the widget share data through the App Group `group.com.codex.LifeGrid`; on device you may need to register that App Group for your team.
 
 > The `.xcodeproj` is generated and git-ignored — always run `xcodegen generate` after pulling changes.
 
@@ -104,12 +106,11 @@ The `LifeGridTests` target covers the store: completion/streak logic, persistenc
 
 ## Roadmap
 
-- Home Screen / Lock Screen widgets (WidgetKit)
 - Apple Health integration (auto-complete from steps / workouts)
 - Reorder & categorize goals
 - Full Dynamic Type & VoiceOver pass
 
-Recently shipped: animated onboarding with branding, accent theming, JSON backup, weekday scheduling, a monthly calendar in goal detail, an all-done celebration, and a "Mark done" notification action.
+Recently shipped: Home Screen widgets, animated onboarding with branding, accent theming, JSON backup, weekday scheduling, a monthly calendar in goal detail, an all-done celebration, and a "Mark done" notification action.
 
 ## Contributing
 
