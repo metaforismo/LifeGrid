@@ -1,25 +1,30 @@
-# LifeGrid
+<p align="center">
+  <img src="screenshots/icon.png" alt="LifeGrid" width="128">
+</p>
 
-**Build better days, one square at a time.**
+<h1 align="center">LifeGrid</h1>
 
-LifeGrid is a private, **local-only** habit & goal tracker for iOS, built with SwiftUI. Check off daily habits, track one-time milestones, and commit to a focused 90-day challenge — with a GitHub-style contribution heatmap adapted to your habits. No account, no cloud, no tracking: everything stays on your device.
+<p align="center"><b>Build better days, one square at a time.</b></p>
 
-<p align="left">
+<p align="center">
   <img alt="Platform" src="https://img.shields.io/badge/platform-iOS%2018%2B-black">
   <img alt="Swift" src="https://img.shields.io/badge/Swift-6.0-orange">
   <img alt="UI" src="https://img.shields.io/badge/UI-SwiftUI-blue">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-green">
 </p>
 
+LifeGrid is a private, **local-only** habit & goal tracker for iOS, built with SwiftUI. Check off daily habits, track one-time milestones, and commit to a focused 90-day challenge — with a GitHub-style contribution heatmap adapted to your habits. No account, no cloud, no tracking: everything stays on your device.
+
 ## Screenshots
 
-| Onboarding | Today | Statistics | Settings |
-|:---:|:---:|:---:|:---:|
-| <img src="screenshots/01-onboarding.jpg" width="200"> | <img src="screenshots/02-today.jpg" width="200"> | <img src="screenshots/03-stats.jpg" width="200"> | <img src="screenshots/04-settings.jpg" width="200"> |
+| Onboarding | Today | Statistics | Goal detail | Settings |
+|:---:|:---:|:---:|:---:|:---:|
+| <img src="screenshots/01-onboarding.jpg" width="170"> | <img src="screenshots/02-today.jpg" width="170"> | <img src="screenshots/03-stats.jpg" width="170"> | <img src="screenshots/05-goal-detail.jpg" width="170"> | <img src="screenshots/04-settings.jpg" width="170"> |
 
 ## Features
 
 - **Today** — a paged week strip, daily check-offs with streaks, one-time milestones, and an active 90-day plan card. View any past/future day.
+- **Flexible scheduling** — habits can repeat every day or on specific weekdays (e.g. Mon/Wed/Fri); streaks and stats are schedule-aware.
 - **Contribution heatmap** — a GitHub-style grid of your habit completions, with month/weekday labels and tap-to-inspect.
 - **Statistics** — completion rate, best streak, total check-ins, an 8-week trend, and unlockable achievements.
 - **Journal** — a quick daily mood + reflection log.
@@ -99,13 +104,12 @@ The `LifeGridTests` target covers the store: completion/streak logic, persistenc
 
 ## Roadmap
 
-- Weekly-frequency habits (e.g. "3× per week")
 - Home Screen / Lock Screen widgets (WidgetKit)
 - Apple Health integration (auto-complete from steps / workouts)
 - Reorder & categorize goals
 - Full Dynamic Type & VoiceOver pass
 
-Recently shipped: animated onboarding, accent theming, JSON backup, a monthly calendar in goal detail, an all-done celebration, and a "Mark done" notification action.
+Recently shipped: animated onboarding with branding, accent theming, JSON backup, weekday scheduling, a monthly calendar in goal detail, an all-done celebration, and a "Mark done" notification action.
 
 ## Contributing
 
