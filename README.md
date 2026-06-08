@@ -23,7 +23,7 @@ LifeGrid is a private, **local-only** habit & goal tracker for iOS, built with S
 - **Contribution heatmap** — a GitHub-style grid of your habit completions, with month/weekday labels and tap-to-inspect.
 - **Statistics** — completion rate, best streak, total check-ins, an 8-week trend, and unlockable achievements.
 - **Journal** — a quick daily mood + reflection log.
-- **Reminders** — optional on-device daily notifications per habit, plus a global nudge. No server involved.
+- **Reminders** — optional on-device daily notifications per habit, plus a global nudge, with a **"Mark done"** action right from the notification. No server involved.
 - **Theming** — six accent colors that retint the whole app, choosable in Settings.
 - **Preferences** — first day of the week and haptic feedback toggles.
 - **Backup** — export/import all your data as a JSON file via the share sheet.
@@ -99,13 +99,13 @@ The `LifeGridTests` target covers the store: completion/streak logic, persistenc
 
 ## Roadmap
 
-- Home Screen / Lock Screen widgets (WidgetKit)
 - Weekly-frequency habits (e.g. "3× per week")
+- Home Screen / Lock Screen widgets (WidgetKit)
 - Apple Health integration (auto-complete from steps / workouts)
-- Per-goal monthly calendar in the detail view
-- Notification actions (check off from the reminder)
 - Reorder & categorize goals
 - Full Dynamic Type & VoiceOver pass
+
+Recently shipped: animated onboarding, accent theming, JSON backup, a monthly calendar in goal detail, an all-done celebration, and a "Mark done" notification action.
 
 ## Contributing
 
