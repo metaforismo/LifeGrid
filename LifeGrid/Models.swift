@@ -185,8 +185,8 @@ enum AccentChoice: String, Codable, CaseIterable, Identifiable {
 
     var color: Color {
         switch self {
-        case .purple: LifeGridTheme.purple
-        case .green: LifeGridTheme.green
+        case .purple: Color(red: 0.68, green: 0.42, blue: 1.0)
+        case .green: Color(red: 0.45, green: 0.93, blue: 0.43)
         case .blue: Color(red: 0.36, green: 0.62, blue: 1.0)
         case .pink: Color(red: 1.0, green: 0.45, blue: 0.72)
         case .orange: Color(red: 1.0, green: 0.6, blue: 0.3)

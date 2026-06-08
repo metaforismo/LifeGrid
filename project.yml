@@ -7,6 +7,8 @@ options:
 settings:
   base:
     SWIFT_VERSION: "6.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
     ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS: YES
 targets:
   LifeGrid:
@@ -14,12 +16,15 @@ targets:
     platform: iOS
     sources:
       - LifeGrid
+    dependencies:
+      - target: LifeGridWidgets
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.codex.LifeGrid
         CODE_SIGN_STYLE: Automatic
         # Set your own Apple Developer Team ID here (or in Xcode) to run on device.
         # DEVELOPMENT_TEAM: XXXXXXXXXX
+        CODE_SIGN_ENTITLEMENTS: LifeGrid/LifeGrid.entitlements
         GENERATE_INFOPLIST_FILE: YES
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         INFOPLIST_KEY_CFBundleDisplayName: LifeGrid
@@ -27,6 +32,22 @@ targets:
         INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
         TARGETED_DEVICE_FAMILY: 1
+  LifeGridWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - LifeGridWidgets
+      - LifeGrid/Models.swift
+      - LifeGrid/SharedStore.swift
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.codex.LifeGrid.Widgets
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGN_ENTITLEMENTS: LifeGridWidgets/LifeGridWidgets.entitlements
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: LifeGridWidgets/Info.plist
+        TARGETED_DEVICE_FAMILY: 1
+        SKIP_INSTALL: YES
   LifeGridTests:
     type: bundle.unit-test
     platform: iOS

@@ -1,6 +1,7 @@
 import Foundation
 import Observation
 import SwiftUI
+import WidgetKit
 
 @MainActor
 @Observable
@@ -28,8 +29,16 @@ final class AppStore {
     var accent: Color { settings.accent.color }
 
     init(storageURL: URL? = nil) {
-        self.storageURL = storageURL ?? FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-            .appendingPathComponent("lifegrid-store.json")
+        let resolved = storageURL ?? SharedStore.storageURL
+        self.storageURL = resolved
+        // One-time migration of an older Documents-only store into the shared
+        // App Group container so the widget can read it.
+        if storageURL == nil,
+           resolved != SharedStore.legacyDocumentsURL,
+           !FileManager.default.fileExists(atPath: resolved.path),
+           FileManager.default.fileExists(atPath: SharedStore.legacyDocumentsURL.path) {
+            try? FileManager.default.copyItem(at: SharedStore.legacyDocumentsURL, to: resolved)
+        }
         load()
         Haptics.enabled = settings.hapticsEnabled
     }
@@ -291,6 +300,7 @@ final class AppStore {
         do {
             let data = try JSONEncoder().encode(currentSnapshot())
             try data.write(to: storageURL, options: [.atomic])
+            WidgetCenter.shared.reloadAllTimelines()
         } catch {
             assertionFailure("Could not save LifeGrid data: \(error)")
         }
