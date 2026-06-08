@@ -189,4 +189,25 @@ final class AppStoreTests: XCTestCase {
         store.setComplete(true, goal: goal, on: .now)
         XCTAssertEqual(store.currentStreak(for: goal), 2, "Checking today extends the streak")
     }
+
+    func testMarkCompleteFromReminderChecksOffToday() {
+        let store = AppStore(storageURL: temporaryURL())
+        guard let goal = store.dailyGoals().first(where: { !$0.isQuantified }) else {
+            return XCTFail("Expected a non-quantified daily goal")
+        }
+        store.setComplete(false, goal: goal)
+        XCTAssertFalse(store.isComplete(goal))
+
+        store.markCompleteFromReminder(goal.id)
+        XCTAssertTrue(store.isComplete(goal), "The notification action should check the goal off for today")
+    }
+
+    func testReminderIDParsesBackToGoalID() {
+        let goal = Goal(
+            id: UUID(), title: "X", note: "", frequency: .daily, activity: .fitness,
+            createdAt: .now, startsOn: DateKey(.now), dueOn: nil, targetValue: 1, unit: "", isArchived: false
+        )
+        XCTAssertEqual(NotificationManager.goalID(fromReminderID: goal.reminderID), goal.id)
+        XCTAssertNil(NotificationManager.goalID(fromReminderID: "lifegrid-daily-nudge"))
+    }
 }

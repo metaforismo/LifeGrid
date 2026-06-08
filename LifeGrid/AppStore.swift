@@ -158,6 +158,12 @@ final class AppStore {
         save()
     }
 
+    /// Mark a goal complete for today in response to a notification action.
+    func markCompleteFromReminder(_ goalID: UUID) {
+        guard let goal = goals.first(where: { $0.id == goalID }) else { return }
+        setComplete(true, goal: goal, on: .now)
+    }
+
     func setProgress(_ value: Double, goal: Goal, on date: Date = .now) {
         let key = goal.frequency == .daily ? DateKey(date, calendar: calendar) : DateKey(.now, calendar: calendar)
         let clamped = min(max(value, 0), goal.targetValue)

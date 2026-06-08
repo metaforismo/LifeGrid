@@ -2816,6 +2816,17 @@
           }
         }
       }
+    },
+    "Mark done": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fatto"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

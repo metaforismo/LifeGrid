@@ -1,14 +1,41 @@
 import Foundation
 import UserNotifications
 
-/// Schedules on-device daily reminders. No server, no account — purely local
-/// `UNCalendarNotificationTrigger`s recomputed from the current goals.
+/// Schedules on-device daily reminders and handles their actions. No server,
+/// no account — purely local `UNCalendarNotificationTrigger`s recomputed from
+/// the current goals, with a "Mark done" action handled by the delegate.
 @MainActor
-final class NotificationManager {
+final class NotificationManager: NSObject {
     static let shared = NotificationManager()
-    private init() {}
+    private override init() { super.init() }
 
     private let dailyNudgeID = "lifegrid-daily-nudge"
+    private nonisolated static let goalReminderPrefix = "goal-reminder-"
+    nonisolated static let completeActionID = "COMPLETE_HABIT"
+    nonisolated static let goalCategoryID = "HABIT_REMINDER"
+
+    /// Called when the user taps "Mark done" on a habit reminder.
+    private var onComplete: ((UUID) -> Void)?
+
+    /// Register the delegate + action category and wire the completion handler.
+    /// Call once at launch.
+    func configure(onComplete: @escaping (UUID) -> Void) {
+        self.onComplete = onComplete
+        let center = UNUserNotificationCenter.current()
+        center.delegate = self
+        let done = UNNotificationAction(
+            identifier: Self.completeActionID,
+            title: String(localized: "Mark done"),
+            options: []
+        )
+        let category = UNNotificationCategory(
+            identifier: Self.goalCategoryID,
+            actions: [done],
+            intentIdentifiers: [],
+            options: []
+        )
+        center.setNotificationCategories([category])
+    }
 
     func authorizationStatus() async -> UNAuthorizationStatus {
         await UNUserNotificationCenter.current().notificationSettings().authorizationStatus
@@ -37,7 +64,8 @@ final class NotificationManager {
                 id: goal.reminderID,
                 title: goal.title,
                 body: goal.note.isEmpty ? String(localized: "Time for your habit") : goal.note,
-                at: comps
+                at: comps,
+                category: Self.goalCategoryID
             )
         }
 
@@ -47,7 +75,8 @@ final class NotificationManager {
                 id: dailyNudgeID,
                 title: "LifeGrid",
                 body: String(localized: "Check in on your habits"),
-                at: comps
+                at: comps,
+                category: nil
             )
         }
     }
@@ -60,14 +89,44 @@ final class NotificationManager {
         sync(goals: goals, dailyReminder: dailyReminder)
     }
 
-    private func schedule(id: String, title: String, body: String, at comps: DateComponents) {
+    private func schedule(id: String, title: String, body: String, at comps: DateComponents, category: String?) {
         guard comps.hour != nil, comps.minute != nil else { return }
         let content = UNMutableNotificationContent()
         content.title = title
         content.body = body
         content.sound = .default
+        if let category { content.categoryIdentifier = category }
         let trigger = UNCalendarNotificationTrigger(dateMatching: comps, repeats: true)
         let request = UNNotificationRequest(identifier: id, content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(request)
+    }
+
+    nonisolated static func goalID(fromReminderID id: String) -> UUID? {
+        guard id.hasPrefix(goalReminderPrefix) else { return nil }
+        return UUID(uuidString: String(id.dropFirst(goalReminderPrefix.count)))
+    }
+}
+
+// MARK: - UNUserNotificationCenterDelegate
+
+extension NotificationManager: UNUserNotificationCenterDelegate {
+    nonisolated func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        didReceive response: UNNotificationResponse,
+        withCompletionHandler completionHandler: @escaping () -> Void
+    ) {
+        if response.actionIdentifier == Self.completeActionID,
+           let id = Self.goalID(fromReminderID: response.notification.request.identifier) {
+            Task { @MainActor in self.onComplete?(id) }
+        }
+        completionHandler()
+    }
+
+    nonisolated func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        willPresent notification: UNNotification,
+        withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void
+    ) {
+        completionHandler([.banner, .sound])
     }
 }

@@ -12,7 +12,11 @@ struct LifeGridApp: App {
                 .environment(clock)
                 .preferredColorScheme(.dark)
                 .task {
-                    // Re-register any scheduled reminders for the current goals.
+                    // Wire the "Mark done" notification action and re-register
+                    // any scheduled reminders for the current goals.
+                    NotificationManager.shared.configure { goalID in
+                        store.markCompleteFromReminder(goalID)
+                    }
                     NotificationManager.shared.sync(
                         goals: store.goals,
                         dailyReminder: store.settings.dailyReminder
