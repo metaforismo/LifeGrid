@@ -1,0 +1,2822 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "Today": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oggi"
+          }
+        }
+      }
+    },
+    "Goals": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obiettivi"
+          }
+        }
+      }
+    },
+    "Stats": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Statistiche"
+          }
+        }
+      }
+    },
+    "Journal": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diario"
+          }
+        }
+      }
+    },
+    "Today's goals": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obiettivi di oggi"
+          }
+        }
+      }
+    },
+    "%lld / %lld completed": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld / %lld completati"
+          }
+        }
+      }
+    },
+    "One-time goals": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obiettivi una tantum"
+          }
+        }
+      }
+    },
+    "All daily goals complete — nice work!": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutti gli obiettivi di oggi completati — ottimo lavoro!"
+          }
+        }
+      }
+    },
+    "No daily goals yet": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ancora nessun obiettivo giornaliero"
+          }
+        }
+      }
+    },
+    "Create a simple promise for today. The week header rolls forward automatically.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crea una piccola promessa per oggi. La settimana avanza automaticamente."
+          }
+        }
+      }
+    },
+    "Create goal": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crea obiettivo"
+          }
+        }
+      }
+    },
+    "No one-time goals": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nessun obiettivo una tantum"
+          }
+        }
+      }
+    },
+    "Add milestones like a trip, a race, a course, or a 12-book challenge.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi traguardi come un viaggio, una gara, un corso o una sfida da 12 libri."
+          }
+        }
+      }
+    },
+    "Create milestone": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crea traguardo"
+          }
+        }
+      }
+    },
+    "Activity grid": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Griglia attività"
+          }
+        }
+      }
+    },
+    "Daily completions across the last 16 weeks": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completamenti giornalieri delle ultime 16 settimane"
+          }
+        }
+      }
+    },
+    "Week %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settimana %lld"
+          }
+        }
+      }
+    },
+    "Settings": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impostazioni"
+          }
+        }
+      }
+    },
+    "Pick a date": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scegli una data"
+          }
+        }
+      }
+    },
+    "Calendar": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calendario"
+          }
+        }
+      }
+    },
+    "Jump to today": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vai a oggi"
+          }
+        }
+      }
+    },
+    "Done": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fine"
+          }
+        }
+      }
+    },
+    "%lld / %lld days completed": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld / %lld giorni completati"
+          }
+        }
+      }
+    },
+    "Daily": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giornaliero"
+          }
+        }
+      }
+    },
+    "Once": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una tantum"
+          }
+        }
+      }
+    },
+    "Plans": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Piani"
+          }
+        }
+      }
+    },
+    "Archive": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Archivio"
+          }
+        }
+      }
+    },
+    "One-time": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una tantum"
+          }
+        }
+      }
+    },
+    "90-day": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "90 giorni"
+          }
+        }
+      }
+    },
+    "No daily habits": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nessuna abitudine giornaliera"
+          }
+        }
+      }
+    },
+    "Daily goals show up on Today once their start date arrives.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gli obiettivi giornalieri compaiono in Oggi dalla data di inizio."
+          }
+        }
+      }
+    },
+    "No milestones": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nessun traguardo"
+          }
+        }
+      }
+    },
+    "One-time goals can be simple completions or numeric targets.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gli obiettivi una tantum possono essere completamenti semplici o numerici."
+          }
+        }
+      }
+    },
+    "No plans": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nessun piano"
+          }
+        }
+      }
+    },
+    "Create a 90-day plan and track the full grid.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crea un piano di 90 giorni e segui l'intera griglia."
+          }
+        }
+      }
+    },
+    "Archive is empty": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'archivio è vuoto"
+          }
+        }
+      }
+    },
+    "Paused or finished goals can be archived from their detail page.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gli obiettivi in pausa o completati si archiviano dalla pagina di dettaglio."
+          }
+        }
+      }
+    },
+    "Create": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crea"
+          }
+        }
+      }
+    },
+    "Goal filter": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtro obiettivi"
+          }
+        }
+      }
+    },
+    "Statistics": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Statistiche"
+          }
+        }
+      }
+    },
+    "Active goals": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obiettivi attivi"
+          }
+        }
+      }
+    },
+    "Insights": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Approfondimenti"
+          }
+        }
+      }
+    },
+    "30-day rate": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tasso 30 giorni"
+          }
+        }
+      }
+    },
+    "Best streak": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serie migliore"
+          }
+        }
+      }
+    },
+    "Total check-ins": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Check-in totali"
+          }
+        }
+      }
+    },
+    "Active days / 30": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giorni attivi / 30"
+          }
+        }
+      }
+    },
+    "All": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutte"
+          }
+        }
+      }
+    },
+    "All activity": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutte le attività"
+          }
+        }
+      }
+    },
+    "Last 32 weeks of completions": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ultime 32 settimane di completamenti"
+          }
+        }
+      }
+    },
+    "This week": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questa settimana"
+          }
+        }
+      }
+    },
+    "Achievements": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traguardi raggiunti"
+          }
+        }
+      }
+    },
+    "%lld / %lld days complete": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld / %lld giorni completati"
+          }
+        }
+      }
+    },
+    "First step": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Primo passo"
+          }
+        }
+      }
+    },
+    "1 check-in": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 check-in"
+          }
+        }
+      }
+    },
+    "On a roll": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In serie"
+          }
+        }
+      }
+    },
+    "7-day streak": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serie di 7 giorni"
+          }
+        }
+      }
+    },
+    "Unstoppable": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inarrestabile"
+          }
+        }
+      }
+    },
+    "30-day streak": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serie di 30 giorni"
+          }
+        }
+      }
+    },
+    "Centurion": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Centurione"
+          }
+        }
+      }
+    },
+    "100 check-ins": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 check-in"
+          }
+        }
+      }
+    },
+    "Consistent": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Costante"
+          }
+        }
+      }
+    },
+    "80% in 30 days": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "80% in 30 giorni"
+          }
+        }
+      }
+    },
+    "Planner": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pianificatore"
+          }
+        }
+      }
+    },
+    "Create a plan": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crea un piano"
+          }
+        }
+      }
+    },
+    "Fitness": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fitness"
+          }
+        }
+      }
+    },
+    "Hydration": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Idratazione"
+          }
+        }
+      }
+    },
+    "Reading": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lettura"
+          }
+        }
+      }
+    },
+    "Meditation": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meditazione"
+          }
+        }
+      }
+    },
+    "Nutrition": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alimentazione"
+          }
+        }
+      }
+    },
+    "Sleep": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sonno"
+          }
+        }
+      }
+    },
+    "Travel": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Viaggi"
+          }
+        }
+      }
+    },
+    "Learning": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apprendimento"
+          }
+        }
+      }
+    },
+    "Creative": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Creatività"
+          }
+        }
+      }
+    },
+    "Finance": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finanze"
+          }
+        }
+      }
+    },
+    "Mindfulness": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mindfulness"
+          }
+        }
+      }
+    },
+    "What moved today?": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cosa ti ha mosso oggi?"
+          }
+        }
+      }
+    },
+    "Save entry": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salva nota"
+          }
+        }
+      }
+    },
+    "Saved": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salvato"
+          }
+        }
+      }
+    },
+    "Recent entries": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Note recenti"
+          }
+        }
+      }
+    },
+    "No journal entries yet.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ancora nessuna nota nel diario."
+          }
+        }
+      }
+    },
+    "Mood %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Umore %lld"
+          }
+        }
+      }
+    },
+    "Type": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tipo"
+          }
+        }
+      }
+    },
+    "Title": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Titolo"
+          }
+        }
+      }
+    },
+    "Note": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nota"
+          }
+        }
+      }
+    },
+    "Change my life": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cambia la mia vita"
+          }
+        }
+      }
+    },
+    "A compact promise for this season": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una promessa essenziale per questa stagione"
+          }
+        }
+      }
+    },
+    "At least 45 minutes": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Almeno 45 minuti"
+          }
+        }
+      }
+    },
+    "Starts": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inizio"
+          }
+        }
+      }
+    },
+    "Due date": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scadenza"
+          }
+        }
+      }
+    },
+    "Due": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scadenza"
+          }
+        }
+      }
+    },
+    "Target": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obiettivo"
+          }
+        }
+      }
+    },
+    "Unit": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unità"
+          }
+        }
+      }
+    },
+    "min, L, books": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "min, L, libri"
+          }
+        }
+      }
+    },
+    "Days": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giorni"
+          }
+        }
+      }
+    },
+    "Create plan": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crea piano"
+          }
+        }
+      }
+    },
+    "Activity": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Attività"
+          }
+        }
+      }
+    },
+    "Cancel": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annulla"
+          }
+        }
+      }
+    },
+    "%lld-day plan": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Piano di %lld giorni"
+          }
+        }
+      }
+    },
+    "%@ history": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Storico: %@"
+          }
+        }
+      }
+    },
+    "Completions for this activity": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completamenti per questa attività"
+          }
+        }
+      }
+    },
+    "Edit": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modifica"
+          }
+        }
+      }
+    },
+    "Restore": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ripristina"
+          }
+        }
+      }
+    },
+    "Delete": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elimina"
+          }
+        }
+      }
+    },
+    "Delete this goal?": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eliminare questo obiettivo?"
+          }
+        }
+      }
+    },
+    "This removes the goal and its history. This can't be undone.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rimuove l'obiettivo e il suo storico. Operazione irreversibile."
+          }
+        }
+      }
+    },
+    "Goal not found": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obiettivo non trovato"
+          }
+        }
+      }
+    },
+    "This goal may have been removed.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questo obiettivo potrebbe essere stato rimosso."
+          }
+        }
+      }
+    },
+    "Progress": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Progresso"
+          }
+        }
+      }
+    },
+    "Complete": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completato"
+          }
+        }
+      }
+    },
+    "Open": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Da fare"
+          }
+        }
+      }
+    },
+    "Mark incomplete": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Segna da fare"
+          }
+        }
+      }
+    },
+    "Mark complete": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Segna completato"
+          }
+        }
+      }
+    },
+    "Streak": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serie"
+          }
+        }
+      }
+    },
+    "Status": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stato"
+          }
+        }
+      }
+    },
+    "Paused": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In pausa"
+          }
+        }
+      }
+    },
+    "Live": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Attivo"
+          }
+        }
+      }
+    },
+    "Starts on %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inizia il %@"
+          }
+        }
+      }
+    },
+    "Overdue since %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In ritardo dal %@"
+          }
+        }
+      }
+    },
+    "Archived goals stay out of Today and active stats.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gli obiettivi archiviati non compaiono in Oggi né nelle statistiche attive."
+          }
+        }
+      }
+    },
+    "Edit goal": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modifica obiettivo"
+          }
+        }
+      }
+    },
+    "Save": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salva"
+          }
+        }
+      }
+    },
+    "Mark %@ complete": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Segna %@ come completato"
+          }
+        }
+      }
+    },
+    "Mark %@ incomplete": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Segna %@ come da fare"
+          }
+        }
+      }
+    },
+    "Current streak %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serie attuale %lld"
+          }
+        }
+      }
+    },
+    "Progress %@ of %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Progresso %@ di %@"
+          }
+        }
+      }
+    },
+    "Progress %lld percent": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Progresso %lld percento"
+          }
+        }
+      }
+    },
+    "Reset": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reimposta"
+          }
+        }
+      }
+    },
+    "Half": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Metà"
+          }
+        }
+      }
+    },
+    "Undo today": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annulla oggi"
+          }
+        }
+      }
+    },
+    "Complete today": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completa oggi"
+          }
+        }
+      }
+    },
+    "90-day grid": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Griglia 90 giorni"
+          }
+        }
+      }
+    },
+    "%lld / %lld days": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld / %lld giorni"
+          }
+        }
+      }
+    },
+    "Remaining": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rimanenti"
+          }
+        }
+      }
+    },
+    "Started": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Iniziato"
+          }
+        }
+      }
+    },
+    "Milestones": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traguardi"
+          }
+        }
+      }
+    },
+    "Day %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giorno %lld"
+          }
+        }
+      }
+    },
+    "Delete this plan?": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eliminare questo piano?"
+          }
+        }
+      }
+    },
+    "This removes the plan and its progress. This can't be undone.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rimuove il piano e i suoi progressi. Operazione irreversibile."
+          }
+        }
+      }
+    },
+    "Plan not found": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Piano non trovato"
+          }
+        }
+      }
+    },
+    "This plan may have been removed.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questo piano potrebbe essere stato rimosso."
+          }
+        }
+      }
+    },
+    "%lld / 3": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld / 3"
+          }
+        }
+      }
+    },
+    "Build a quiet daily system: recurring check-offs, one-time milestones, and a focused challenge. Everything stays local.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Costruisci un sistema quotidiano semplice: check-off ricorrenti, traguardi una tantum e una sfida mirata. Tutto resta in locale."
+          }
+        }
+      }
+    },
+    "What should appear every day?": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cosa vuoi vedere ogni giorno?"
+          }
+        }
+      }
+    },
+    "Pick the habits you want to check off daily.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scegli le abitudini da spuntare ogni giorno."
+          }
+        }
+      }
+    },
+    "Which goals happen once?": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quali obiettivi sono una tantum?"
+          }
+        }
+      }
+    },
+    "Add milestones that don't need a daily repeat.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi traguardi che non si ripetono ogni giorno."
+          }
+        }
+      }
+    },
+    "Create your challenge": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crea la tua sfida"
+          }
+        }
+      }
+    },
+    "A 90-day plan is the default. Adjust the season before it starts.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il piano predefinito è di 90 giorni. Regola la stagione prima di iniziare."
+          }
+        }
+      }
+    },
+    "Name": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nome"
+          }
+        }
+      }
+    },
+    "Subtitle": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sottotitolo"
+          }
+        }
+      }
+    },
+    "90-day challenge": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sfida di 90 giorni"
+          }
+        }
+      }
+    },
+    "Challenge length": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Durata della sfida"
+          }
+        }
+      }
+    },
+    "%lld days": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld giorni"
+          }
+        }
+      }
+    },
+    "No account": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nessun account"
+          }
+        }
+      }
+    },
+    "Your data is stored locally on the device.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I tuoi dati restano in locale sul dispositivo."
+          }
+        }
+      }
+    },
+    "Streaks & heatmaps": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serie e heatmap"
+          }
+        }
+      }
+    },
+    "Daily completions appear in a contribution grid.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I completamenti giornalieri appaiono in una griglia dei contributi."
+          }
+        }
+      }
+    },
+    "Keep one focused plan front and center.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tieni un solo piano mirato in primo piano."
+          }
+        }
+      }
+    },
+    "Skip": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salta"
+          }
+        }
+      }
+    },
+    "Back": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Indietro"
+          }
+        }
+      }
+    },
+    "Next": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avanti"
+          }
+        }
+      }
+    },
+    "Start": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inizia"
+          }
+        }
+      }
+    },
+    "Your starting grid": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La tua griglia iniziale"
+          }
+        }
+      }
+    },
+    "Local goals, daily momentum": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obiettivi locali, slancio quotidiano"
+          }
+        }
+      }
+    },
+    "daily": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "giornalieri"
+          }
+        }
+      }
+    },
+    "once": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "una tantum"
+          }
+        }
+      }
+    },
+    "days": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "giorni"
+          }
+        }
+      }
+    },
+    "Workout": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allenamento"
+          }
+        }
+      }
+    },
+    "Drink water": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bevi acqua"
+          }
+        }
+      }
+    },
+    "2 liters": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "2 litri"
+          }
+        }
+      }
+    },
+    "Read": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leggi"
+          }
+        }
+      }
+    },
+    "At least 20 minutes": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Almeno 20 minuti"
+          }
+        }
+      }
+    },
+    "Meditate": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Medita"
+          }
+        }
+      }
+    },
+    "At least 10 minutes": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Almeno 10 minuti"
+          }
+        }
+      }
+    },
+    "Walk 10k steps": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cammina 10k passi"
+          }
+        }
+      }
+    },
+    "Move every day": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Muoviti ogni giorno"
+          }
+        }
+      }
+    },
+    "Three grateful things": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tre cose per cui sei grato"
+          }
+        }
+      }
+    },
+    "Sleep early": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dormi presto"
+          }
+        }
+      }
+    },
+    "Before 23:30": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prima delle 23:30"
+          }
+        }
+      }
+    },
+    "Eat clean": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mangia sano"
+          }
+        }
+      }
+    },
+    "No junk food": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niente cibo spazzatura"
+          }
+        }
+      }
+    },
+    "Run 10 km": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Corri 10 km"
+          }
+        }
+      }
+    },
+    "Single milestone": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Traguardo singolo"
+          }
+        }
+      }
+    },
+    "Read 12 books": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leggi 12 libri"
+          }
+        }
+      }
+    },
+    "A long target": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un obiettivo ambizioso"
+          }
+        }
+      }
+    },
+    "Solo trip": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Viaggio in solitaria"
+          }
+        }
+      }
+    },
+    "Plan and take the trip": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pianifica e parti"
+          }
+        }
+      }
+    },
+    "Learn a language": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impara una lingua"
+          }
+        }
+      }
+    },
+    "Reach a first milestone": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Raggiungi un primo traguardo"
+          }
+        }
+      }
+    },
+    "Build a portfolio": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crea un portfolio"
+          }
+        }
+      }
+    },
+    "One complete project": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un progetto completo"
+          }
+        }
+      }
+    },
+    "Private by design": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privato per scelta"
+          }
+        }
+      }
+    },
+    "No account, no cloud. Everything you track stays on this device.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nessun account, nessun cloud. Tutto ciò che monitori resta su questo dispositivo."
+          }
+        }
+      }
+    },
+    "Data": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dati"
+          }
+        }
+      }
+    },
+    "Load sample data": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Carica dati di esempio"
+          }
+        }
+      }
+    },
+    "Fill the app with example goals and history": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Riempie l'app con obiettivi e storico di esempio"
+          }
+        }
+      }
+    },
+    "Reset & restart onboarding": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reimposta e riavvia l'onboarding"
+          }
+        }
+      }
+    },
+    "Erase everything and start fresh": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancella tutto e ricomincia"
+          }
+        }
+      }
+    },
+    "About": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informazioni"
+          }
+        }
+      }
+    },
+    "App": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App"
+          }
+        }
+      }
+    },
+    "Version": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versione"
+          }
+        }
+      }
+    },
+    "The app follows your device language (English, Italian).": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'app segue la lingua del dispositivo (inglese, italiano)."
+          }
+        }
+      }
+    },
+    "Reset all data?": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reimpostare tutti i dati?"
+          }
+        }
+      }
+    },
+    "This restores the sample data and restarts the welcome flow. This can't be undone.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ripristina i dati di esempio e riavvia la procedura di benvenuto. Operazione irreversibile."
+          }
+        }
+      }
+    },
+    "%lld completions on %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld completamenti il %@"
+          }
+        }
+      }
+    },
+    "90-day plan": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Piano di 90 giorni"
+          }
+        }
+      }
+    },
+    "Momentum is visible when I keep promises small enough to finish.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lo slancio si vede quando mantengo promesse abbastanza piccole da completare."
+          }
+        }
+      }
+    },
+    "Good morning": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buongiorno"
+          }
+        }
+      }
+    },
+    "Good afternoon": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buon pomeriggio"
+          }
+        }
+      }
+    },
+    "Good evening": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buonasera"
+          }
+        }
+      }
+    },
+    "Appearance": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aspetto"
+          }
+        }
+      }
+    },
+    "Accent color": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Colore d'accento"
+          }
+        }
+      }
+    },
+    "Purple": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Viola"
+          }
+        }
+      }
+    },
+    "Green": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verde"
+          }
+        }
+      }
+    },
+    "Blue": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blu"
+          }
+        }
+      }
+    },
+    "Pink": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rosa"
+          }
+        }
+      }
+    },
+    "Orange": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arancione"
+          }
+        }
+      }
+    },
+    "Teal": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verde acqua"
+          }
+        }
+      }
+    },
+    "Preferences": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preferenze"
+          }
+        }
+      }
+    },
+    "Start week on": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inizio settimana"
+          }
+        }
+      }
+    },
+    "System": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sistema"
+          }
+        }
+      }
+    },
+    "Monday": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lunedì"
+          }
+        }
+      }
+    },
+    "Sunday": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Domenica"
+          }
+        }
+      }
+    },
+    "Haptic feedback": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feedback aptico"
+          }
+        }
+      }
+    },
+    "Daily reminder": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Promemoria giornaliero"
+          }
+        }
+      }
+    },
+    "A gentle nudge to check in": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un promemoria gentile per fare il punto"
+          }
+        }
+      }
+    },
+    "Reminder time": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orario promemoria"
+          }
+        }
+      }
+    },
+    "Export backup": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esporta backup"
+          }
+        }
+      }
+    },
+    "Save all your data as a JSON file": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salva tutti i dati in un file JSON"
+          }
+        }
+      }
+    },
+    "Import backup": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Importa backup"
+          }
+        }
+      }
+    },
+    "Replace data from a JSON file": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sostituisci i dati da un file JSON"
+          }
+        }
+      }
+    },
+    "Replace all data?": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sostituire tutti i dati?"
+          }
+        }
+      }
+    },
+    "Importing replaces everything currently in the app with the backup's contents.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'importazione sostituisce tutto il contenuto attuale con quello del backup."
+          }
+        }
+      }
+    },
+    "Import": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Importa"
+          }
+        }
+      }
+    },
+    "Couldn't read that file": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossibile leggere il file"
+          }
+        }
+      }
+    },
+    "The selected file isn't a valid LifeGrid backup.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il file selezionato non è un backup valido di LifeGrid."
+          }
+        }
+      }
+    },
+    "OK": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        }
+      }
+    },
+    "Reminder": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Promemoria"
+          }
+        }
+      }
+    },
+    "Time for your habit": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "È ora della tua abitudine"
+          }
+        }
+      }
+    },
+    "Check in on your habits": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fai il punto sulle tue abitudini"
+          }
+        }
+      }
+    },
+    "Less": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meno"
+          }
+        }
+      }
+    },
+    "More": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Più"
+          }
+        }
+      }
+    },
+    "8-week trend": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Andamento 8 settimane"
+          }
+        }
+      }
+    },
+    "Now": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ora"
+          }
+        }
+      }
+    },
+    "Build better days, one square at a time.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Costruisci giorni migliori, un quadrato alla volta."
+          }
+        }
+      }
+    },
+    "See your momentum": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guarda il tuo slancio"
+          }
+        }
+      }
+    },
+    "Every habit you check off fills a square. Watch your streaks grow like a contribution graph.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ogni abitudine che spunti riempie un quadrato. Guarda le tue serie crescere come un grafico dei contributi."
+          }
+        }
+      }
+    },
+    "No account, no cloud, no tracking. Everything you log stays on this device — always.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nessun account, nessun cloud, nessun tracciamento. Tutto ciò che registri resta su questo dispositivo, sempre."
+          }
+        }
+      }
+    },
+    "Pick your daily habits": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scegli le tue abitudini giornaliere"
+          }
+        }
+      }
+    },
+    "Choose the things you want to check off every day. You can change these any time.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scegli le cose da spuntare ogni giorno. Puoi modificarle quando vuoi."
+          }
+        }
+      }
+    },
+    "Name your challenge": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dai un nome alla sfida"
+          }
+        }
+      }
+    },
+    "Set one focused goal to anchor your habits. The classic is 90 days.": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Imposta un obiettivo mirato per ancorare le abitudini. Il classico è 90 giorni."
+          }
+        }
+      }
+    },
+    "Goal": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obiettivo"
+          }
+        }
+      }
+    },
+    "Length": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Durata"
+          }
+        }
+      }
+    },
+    "Continue": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continua"
+          }
+        }
+      }
+    },
+    "%lld-day challenge": {
+      "extractionState": "manual",
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sfida di %lld giorni"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
