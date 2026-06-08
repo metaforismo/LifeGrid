@@ -59,14 +59,17 @@ final class NotificationManager: NSObject {
         let calendar = Calendar.autoupdatingCurrent
         for goal in goals where !goal.isArchived && goal.frequency == .daily {
             guard let time = goal.reminderTime else { continue }
-            let comps = calendar.dateComponents([.hour, .minute], from: time)
-            schedule(
-                id: goal.reminderID,
-                title: goal.title,
-                body: goal.note.isEmpty ? String(localized: "Time for your habit") : goal.note,
-                at: comps,
-                category: Self.goalCategoryID
-            )
+            let hm = calendar.dateComponents([.hour, .minute], from: time)
+            let body = goal.note.isEmpty ? String(localized: "Time for your habit") : goal.note
+            if goal.isEveryDay {
+                schedule(id: goal.reminderID, title: goal.title, body: body, at: hm, category: Self.goalCategoryID)
+            } else {
+                for weekday in goal.weekdays ?? [] {
+                    var comps = hm
+                    comps.weekday = weekday
+                    schedule(id: "\(goal.reminderID)__\(weekday)", title: goal.title, body: body, at: comps, category: Self.goalCategoryID)
+                }
+            }
         }
 
         if let dailyReminder {
@@ -103,7 +106,10 @@ final class NotificationManager: NSObject {
 
     nonisolated static func goalID(fromReminderID id: String) -> UUID? {
         guard id.hasPrefix(goalReminderPrefix) else { return nil }
-        return UUID(uuidString: String(id.dropFirst(goalReminderPrefix.count)))
+        // A reminder id is "goal-reminder-<uuid>" optionally suffixed with
+        // "__<weekday>" for weekly schedules. The UUID is the first 36 chars.
+        let remainder = id.dropFirst(goalReminderPrefix.count)
+        return UUID(uuidString: String(remainder.prefix(36)))
     }
 }
 

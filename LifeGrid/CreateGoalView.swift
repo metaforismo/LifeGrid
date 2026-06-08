@@ -29,6 +29,8 @@ struct CreateGoalView: View {
     @State private var planDays = 90
     @State private var hasReminder = false
     @State private var reminderTime = Calendar.autoupdatingCurrent.date(from: DateComponents(hour: 9, minute: 0)) ?? .now
+    @State private var specificDays = false
+    @State private var weekdays: Set<Int> = []
 
     var body: some View {
         NavigationStack {
@@ -81,6 +83,18 @@ struct CreateGoalView: View {
                                 DatePicker("Reminder time", selection: $reminderTime, displayedComponents: .hourAndMinute)
                                     .foregroundStyle(.white)
                                     .tint(store.accent)
+                            }
+
+                            if mode == .daily {
+                                Divider().background(LifeGridTheme.stroke)
+                                Picker("Repeat", selection: $specificDays) {
+                                    Text("Every day").tag(false)
+                                    Text("Specific days").tag(true)
+                                }
+                                .pickerStyle(.segmented)
+                                if specificDays {
+                                    WeekdaySelector(selection: $weekdays)
+                                }
                             }
                         }
                     } else {
@@ -205,7 +219,8 @@ struct CreateGoalView: View {
                 dueOn: hasDueDate ? dueDate : nil,
                 targetValue: targetValue,
                 unit: unit,
-                reminderTime: hasReminder ? reminderTime : nil
+                reminderTime: hasReminder ? reminderTime : nil,
+                weekdays: (mode == .daily && specificDays) ? weekdays : nil
             )
             if hasReminder {
                 Task { await NotificationManager.shared.ensureAuthorizedThenSync(goals: store.goals, dailyReminder: store.settings.dailyReminder) }

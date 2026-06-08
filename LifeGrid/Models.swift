@@ -118,9 +118,20 @@ struct Goal: Identifiable, Hashable, Codable {
     /// Optional daily reminder time (only hour/minute are used). Optional →
     /// older saved goals without the field decode to `nil` automatically.
     var reminderTime: Date?
+    /// Calendar weekdays (1 = Sunday … 7 = Saturday) on which a daily goal is
+    /// active. `nil` or empty means every day. Optional → back-compatible.
+    var weekdays: Set<Int>?
 
     var isQuantified: Bool {
         targetValue > 1 || !unit.isEmpty
+    }
+
+    /// True when the goal repeats every day (no specific weekday schedule).
+    var isEveryDay: Bool { (weekdays ?? []).isEmpty }
+
+    /// Whether the goal is active on the given Calendar weekday (1...7).
+    func isScheduled(onWeekday weekday: Int) -> Bool {
+        isEveryDay || (weekdays ?? []).contains(weekday)
     }
 
     /// Stable identifier used for scheduling this goal's local notification.
@@ -162,6 +173,7 @@ struct GoalDraft: Hashable {
     var activity: ActivityKind
     var targetValue: Double = 1
     var unit: String = ""
+    var weekdays: Set<Int>? = nil
 }
 
 // MARK: - Settings & theming

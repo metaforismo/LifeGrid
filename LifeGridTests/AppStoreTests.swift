@@ -202,6 +202,43 @@ final class AppStoreTests: XCTestCase {
         XCTAssertTrue(store.isComplete(goal), "The notification action should check the goal off for today")
     }
 
+    func testWeeklyGoalAppearsOnlyOnScheduledDays() {
+        let store = AppStore(storageURL: temporaryURL())
+        let cal = Calendar.autoupdatingCurrent
+        let todayWeekday = cal.component(.weekday, from: .now)
+        store.addGoal(
+            title: "Gym", note: "", frequency: .daily, activity: .fitness,
+            startsOn: .now, dueOn: nil, targetValue: 1, unit: "", reminderTime: nil,
+            weekdays: [todayWeekday]
+        )
+        guard let goal = store.goals.first(where: { $0.title == "Gym" }) else {
+            return XCTFail("Expected the weekly goal")
+        }
+        XCTAssertTrue(store.dailyGoals(on: .now).contains { $0.id == goal.id })
+
+        let tomorrow = cal.date(byAdding: .day, value: 1, to: .now)!
+        XCTAssertFalse(store.dailyGoals(on: tomorrow).contains { $0.id == goal.id },
+                       "A weekly goal should not appear on an unscheduled weekday")
+    }
+
+    func testStreakSkipsUnscheduledDaysForWeeklyGoal() {
+        let store = AppStore(storageURL: temporaryURL())
+        let cal = Calendar.autoupdatingCurrent
+        let weekday = cal.component(.weekday, from: .now)
+        store.addGoal(
+            title: "Long run", note: "", frequency: .daily, activity: .fitness,
+            startsOn: cal.date(byAdding: .day, value: -30, to: .now)!, dueOn: nil,
+            targetValue: 1, unit: "", reminderTime: nil, weekdays: [weekday]
+        )
+        guard let goal = store.goals.first(where: { $0.title == "Long run" }) else {
+            return XCTFail("Expected the weekly goal")
+        }
+        store.setComplete(true, goal: goal, on: .now)
+        store.setComplete(true, goal: goal, on: cal.date(byAdding: .day, value: -7, to: .now)!)
+        XCTAssertEqual(store.currentStreak(for: goal), 2,
+                       "Streak should count scheduled occurrences and skip the gap days")
+    }
+
     func testReminderIDParsesBackToGoalID() {
         let goal = Goal(
             id: UUID(), title: "X", note: "", frequency: .daily, activity: .fitness,

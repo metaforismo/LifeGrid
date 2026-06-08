@@ -69,9 +69,10 @@ struct GoalCalendarView: View {
         let complete = store.isComplete(goal, on: day)
         let isToday = calendar.isDate(day, inSameDayAs: clock.now)
         let isFuture = day > clock.now
+        let scheduled = goal.isScheduled(onWeekday: calendar.component(.weekday, from: day))
         return Text(day, format: .dateTime.day())
             .font(.footnote.weight(complete ? .bold : .regular))
-            .foregroundStyle(complete ? .black : (isFuture ? LifeGridTheme.muted : .white))
+            .foregroundStyle(complete ? .black : (isFuture || !scheduled ? LifeGridTheme.muted : .white))
             .frame(maxWidth: .infinity)
             .frame(height: 34)
             .background(

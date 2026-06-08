@@ -36,10 +36,12 @@ final class AppStore {
 
     func dailyGoals(on date: Date = .now, includeArchived: Bool = false) -> [Goal] {
         let key = DateKey(date, calendar: calendar)
+        let weekday = calendar.component(.weekday, from: date)
         return goals
             .filter { $0.frequency == .daily }
             .filter { includeArchived || !$0.isArchived }
             .filter { $0.startsOn <= key }
+            .filter { $0.isScheduled(onWeekday: weekday) }
             .sorted { $0.createdAt < $1.createdAt }
     }
 
@@ -66,7 +68,8 @@ final class AppStore {
         dueOn: Date?,
         targetValue: Double,
         unit: String,
-        reminderTime: Date? = nil
+        reminderTime: Date? = nil,
+        weekdays: Set<Int>? = nil
     ) {
         let goal = Goal(
             id: UUID(),
@@ -80,7 +83,8 @@ final class AppStore {
             targetValue: max(1, targetValue),
             unit: unit.trimmingCharacters(in: .whitespacesAndNewlines),
             isArchived: false,
-            reminderTime: reminderTime
+            reminderTime: reminderTime,
+            weekdays: (weekdays?.isEmpty ?? true) ? nil : weekdays
         )
         goals.append(goal)
         save()
@@ -214,15 +218,23 @@ final class AppStore {
 
     func currentStreak(for goal: Goal, ending date: Date = .now) -> Int {
         guard goal.frequency == .daily else { return isComplete(goal) ? 1 : 0 }
-        var cursor = date
-        // If the ending day isn't checked off yet, start from the previous day
-        // so an in-progress streak still shows until the day actually ends.
-        if !isComplete(goal, on: cursor) {
-            cursor = calendar.date(byAdding: .day, value: -1, to: cursor) ?? cursor
-        }
         var streak = 0
-        while isComplete(goal, on: cursor) {
-            streak += 1
+        var cursor = date
+        var isFirstScheduled = true
+        // Walk back day by day, only counting scheduled days. A scheduled-but-
+        // incomplete day breaks the streak, except today (still in progress).
+        for _ in 0 ..< 400 {
+            let weekday = calendar.component(.weekday, from: cursor)
+            if goal.isScheduled(onWeekday: weekday) {
+                if isComplete(goal, on: cursor) {
+                    streak += 1
+                } else if isFirstScheduled, calendar.isDateInToday(cursor) {
+                    // today not checked off yet — don't count, don't break
+                } else {
+                    break
+                }
+                isFirstScheduled = false
+            }
             guard let prev = calendar.date(byAdding: .day, value: -1, to: cursor) else { break }
             cursor = prev
         }
@@ -429,7 +441,9 @@ final class AppStore {
             dueOn: dueOn.map { DateKey($0, calendar: calendar) },
             targetValue: max(1, draft.targetValue),
             unit: draft.unit,
-            isArchived: false
+            isArchived: false,
+            reminderTime: nil,
+            weekdays: (draft.weekdays?.isEmpty ?? true) ? nil : draft.weekdays
         ))
     }
 
@@ -444,8 +458,10 @@ final class AppStore {
         var run = 0
         for offset in stride(from: window, through: 0, by: -1) {
             guard let date = calendar.date(byAdding: .day, value: -offset, to: .now) else { continue }
-            let due = active.filter { $0.startsOn <= DateKey(date, calendar: calendar) }
-            guard !due.isEmpty else { run = 0; continue }
+            let weekday = calendar.component(.weekday, from: date)
+            let due = active.filter { $0.startsOn <= DateKey(date, calendar: calendar) && $0.isScheduled(onWeekday: weekday) }
+            // Days with nothing scheduled don't count for or against the streak.
+            guard !due.isEmpty else { continue }
             let allDone = due.allSatisfy { isComplete($0, on: date) }
             if allDone { run += 1; best = max(best, run) } else { run = 0 }
         }

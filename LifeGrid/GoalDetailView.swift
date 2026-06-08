@@ -102,6 +102,11 @@ struct GoalDetailView: View {
                     .font(.body)
                     .foregroundStyle(LifeGridTheme.secondary)
             }
+            if goal.frequency == .daily {
+                Label(weekdaysLabel(goal.weekdays, calendar: store.calendar), systemImage: "calendar")
+                    .font(.subheadline.weight(.medium))
+                    .foregroundStyle(goal.activity.accent)
+            }
         }
         .padding(16)
         .lifePanel()
@@ -216,6 +221,24 @@ struct GoalEditView: View {
                     .padding(16)
                     .lifePanel()
 
+                    if goal.frequency == .daily {
+                        VStack(alignment: .leading, spacing: 12) {
+                            Text("Schedule")
+                                .font(.headline)
+                                .foregroundStyle(.white)
+                            Picker("Repeat", selection: specificDaysBinding) {
+                                Text("Every day").tag(false)
+                                Text("Specific days").tag(true)
+                            }
+                            .pickerStyle(.segmented)
+                            if !(goal.weekdays ?? []).isEmpty {
+                                WeekdaySelector(selection: weekdaysBinding)
+                            }
+                        }
+                        .padding(16)
+                        .lifePanel()
+                    }
+
                     VStack(alignment: .leading, spacing: 12) {
                         Text("Activity")
                             .font(.headline)
@@ -264,6 +287,20 @@ struct GoalEditView: View {
             set: { on in
                 goal.reminderTime = on ? (Calendar.autoupdatingCurrent.date(from: DateComponents(hour: 9, minute: 0)) ?? .now) : nil
             }
+        )
+    }
+
+    private var specificDaysBinding: Binding<Bool> {
+        Binding(
+            get: { !(goal.weekdays ?? []).isEmpty },
+            set: { on in goal.weekdays = on ? Set(1 ... 7) : nil }
+        )
+    }
+
+    private var weekdaysBinding: Binding<Set<Int>> {
+        Binding(
+            get: { goal.weekdays ?? [] },
+            set: { goal.weekdays = $0.isEmpty ? nil : $0 }
         )
     }
 
