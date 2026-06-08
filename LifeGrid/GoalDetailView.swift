@@ -15,6 +15,9 @@ struct GoalDetailView: View {
                 VStack(spacing: 18) {
                     header(goal)
                     actionPanel(goal)
+                    if goal.frequency == .daily {
+                        GoalCalendarView(goal: goal)
+                    }
                     ContributionHeatmapView(
                         title: String(localized: "\(goal.activity.title) history"),
                         subtitle: String(localized: "Completions for this activity"),
