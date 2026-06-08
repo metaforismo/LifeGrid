@@ -50,8 +50,10 @@ struct OnboardingView: View {
                             .padding(.horizontal, 14)
                             .padding(.vertical, 8)
                             .background(.ultraThinMaterial, in: Capsule())
+                            .contentShape(Capsule())
                     }
-                    .opacity(step == lastStep ? 0 : 1)
+                    .buttonStyle(.plain)
+                    .accessibilityLabel(Text("Skip onboarding"))
                 }
                 .padding(.horizontal, 22)
                 .padding(.top, 8)
@@ -59,6 +61,7 @@ struct OnboardingView: View {
                 Spacer()
                 controls
             }
+            .zIndex(1)
         }
         .preferredColorScheme(.dark)
     }
