@@ -151,10 +151,24 @@ struct OnboardingView: View {
 // MARK: - Screens
 
 private struct WelcomeScreen: View {
+    @State private var appear = false
+
     var body: some View {
-        VStack(spacing: 28) {
+        VStack(spacing: 30) {
             Spacer()
-            AnimatedHeatmapHero()
+            Image("AppLogo")
+                .resizable()
+                .interpolation(.high)
+                .frame(width: 136, height: 136)
+                .clipShape(RoundedRectangle(cornerRadius: 32, style: .continuous))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 32, style: .continuous)
+                        .stroke(.white.opacity(0.10), lineWidth: 1)
+                )
+                .shadow(color: LifeGridTheme.green.opacity(0.35), radius: 30, y: 12)
+                .scaleEffect(appear ? 1 : 0.82)
+                .opacity(appear ? 1 : 0)
+                .animation(.spring(response: 0.6, dampingFraction: 0.7), value: appear)
             VStack(spacing: 12) {
                 Text("LifeGrid")
                     .font(.system(size: 44, weight: .bold))
@@ -168,6 +182,7 @@ private struct WelcomeScreen: View {
             Spacer()
             Spacer()
         }
+        .onAppear { appear = true }
     }
 }
 
@@ -209,6 +224,27 @@ private struct HabitsScreen: View {
                 Text("Choose the things you want to check off every day. You can change these any time.")
                     .font(.body)
                     .foregroundStyle(LifeGridTheme.secondary)
+                HStack {
+                    Text("\(selection.count) selected")
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(LifeGridTheme.green)
+                        .contentTransition(.numericText())
+                    Spacer()
+                    Button {
+                        Haptics.soft()
+                        if selection.count == templates.count {
+                            selection.removeAll()
+                        } else {
+                            selection = Set(templates)
+                        }
+                    } label: {
+                        Text(selection.count == templates.count ? "Clear" : "Select all")
+                            .font(.subheadline.weight(.semibold))
+                            .foregroundStyle(store.accent)
+                    }
+                    .buttonStyle(.plain)
+                }
+                .padding(.top, 2)
             }
             .padding(.horizontal, 22)
 
