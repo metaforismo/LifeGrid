@@ -8,8 +8,14 @@ struct TodayView: View {
     @State private var selectedDate: Date = .now
     @State private var showDatePicker = false
     @State private var showSettings = false
+    @State private var celebrate = false
 
     private var calendar: Calendar { store.calendar }
+
+    private var allDoneSelected: Bool {
+        let goals = store.dailyGoals(on: selectedDate)
+        return !goals.isEmpty && goals.allSatisfy { store.isComplete($0, on: selectedDate) }
+    }
 
     private var isFuture: Bool {
         calendar.compare(selectedDate, to: clock.now, toGranularity: .day) == .orderedDescending
@@ -56,6 +62,21 @@ struct TodayView: View {
         }
         .scrollIndicators(.hidden)
         .background(AppBackground())
+        .overlay {
+            if celebrate {
+                CelebrationView()
+                    .transition(.opacity)
+            }
+        }
+        .onChange(of: allDoneSelected) { _, isAllDone in
+            guard isAllDone, isToday else { return }
+            Haptics.success()
+            withAnimation { celebrate = true }
+            Task {
+                try? await Task.sleep(for: .seconds(2))
+                withAnimation { celebrate = false }
+            }
+        }
         .sheet(isPresented: $showDatePicker) {
             DatePickerSheet(selectedDate: $selectedDate)
                 .presentationDetents([.medium, .large])
