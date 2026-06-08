@@ -1,0 +1,39 @@
+name: LifeGrid
+options:
+  bundleIdPrefix: com.codex
+  developmentLanguage: en
+  deploymentTarget:
+    iOS: "18.0"
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS: YES
+targets:
+  LifeGrid:
+    type: application
+    platform: iOS
+    sources:
+      - LifeGrid
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.codex.LifeGrid
+        CODE_SIGN_STYLE: Automatic
+        # Set your own Apple Developer Team ID here (or in Xcode) to run on device.
+        # DEVELOPMENT_TEAM: XXXXXXXXXX
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: LifeGrid
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.productivity
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        TARGETED_DEVICE_FAMILY: 1
+  LifeGridTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - LifeGridTests
+    dependencies:
+      - target: LifeGrid
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.codex.LifeGridTests
+        GENERATE_INFOPLIST_FILE: YES
